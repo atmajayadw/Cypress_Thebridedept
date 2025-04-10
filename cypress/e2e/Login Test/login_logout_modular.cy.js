@@ -32,7 +32,9 @@ describe("Login Page Test Cases", () => {
         cy.contains('a', 'Atmajaya').click({ force: true });
 
         cy.origin('https://member.thebridedept.com', () => {
-            cy.contains('button', 'Logout').click();    
+            cy.contains('button', 'Logout').click().then(() => {
+              cy.log('Logout clicked ✅');
+            });
         }); 
         
       });

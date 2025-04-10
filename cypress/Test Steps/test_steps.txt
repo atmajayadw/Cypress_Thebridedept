@@ -31,19 +31,13 @@ Test Logout
 8. Click CTA Logout
 9. Logout success and showing copy "Login as Member" as an Assertion
 
-Test Purchasing Product
+Test Order Package
 (+) Positive scenario
-1. User visit Website
-2. User click CTA Member
-3. User input Email atmajaya.dw@gmail.com
-4. User input Password jay123
-5. User click CTA Login
-6. System validating login creds
-7. Login success 
-8. User click dropdown menu Store
-9. User click CTA Store
-10. User click Product
-11. System showing Product Detail page
-12. User click CTA Buy
-13. User choose Date and click Buy
-14. System showing Xendit Page
+1. User login
+2. User click dropdown menu Store
+3. User click CTA Store
+4. User click Product
+5. System showing Product Detail page
+6. User click CTA Buy
+7. User choose Date and click Buy
+8. System showing Xendit Page
