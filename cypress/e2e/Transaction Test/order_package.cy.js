@@ -24,7 +24,12 @@ describe("Order Package Test Cases", () => {
     beforeEach(() => {
         // Always run in the beginning of the test
         cy.viewport(1366, 768);
-
+        cy.clearCookies();
+        cy.clearLocalStorage();
+        cy.window().then((win) => {
+          win.sessionStorage.clear();
+        });
+        
         // Create Session Login to run every test without login again in beginning
         cy.session("login-session", login);
     });
